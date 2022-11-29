@@ -23,7 +23,7 @@ console.log(`Il Computer ha scelto ${uiNumber}`);
 
 const calcWin = uiNumber + userNumber;
 
-const calcWinResult = checkWin(calcWin);
+const calcWinResult = checkWin(calcWin,userChoise);
 
 console.log(calcWinResult);
 
@@ -33,12 +33,12 @@ const randomNumber = Math.floor(Math.random() * (endNumber - startNumber + 1) + 
     return parseInt((randomNumber), 10);
 }
 
-function checkWin(calcWin){
-if ((calcWin % 2 == 0) && (userChoise == 'pari')){
+function checkWin(uChoise,uNumber){
+    if ((uChoise % 2 == 0) && (uNumber == 'pari')){
     return ("Vittoria!");
-    } else if ( (calcWin % 2 == 1) && (userChoise == 'dispari')){
+    } else if ( (uChoise % 2 == 1) && (uNumber == 'dispari')){
     return ("Vittoria!");
-    }   else{
+    } else{
     return ("YOU LOOSE!");
-    } 
+    }
 }

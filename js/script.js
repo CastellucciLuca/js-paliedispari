@@ -22,12 +22,3 @@ const result = checkPalindrome(word);
 
 console.log (result);
 
-function checkWin(calc){
-    if ((calcWin % 2 == 0) && (userChoose == "pari")){
-    return ("Che forza, hai vinto!!!");
-    }   else if ( (calcWin % 2 == 1) && (userChoose == "dispari")){
-        return ("Che forza, hai vinto!!!");
-    }   else{
-        return ("Hai perso!");
-    } 
-}
