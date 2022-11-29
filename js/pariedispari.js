@@ -33,10 +33,10 @@ const randomNumber = Math.floor(Math.random() * (endNumber - startNumber + 1) + 
     return parseInt((randomNumber), 10);
 }
 
-function checkWin(uChoise,uNumber){
-    if ((uChoise % 2 == 0) && (uNumber == 'pari')){
+function checkWin(uNumber,uChoise){
+    if ((uNumber % 2 == 0) && (uChoise == 'pari')){
     return ("Vittoria!");
-    } else if ( (uChoise % 2 == 1) && (uNumber == 'dispari')){
+    } else if ( (uNumber % 2 == 1) && (uChoise == 'dispari')){
     return ("Vittoria!");
     } else{
     return ("YOU LOOSE!");
